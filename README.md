@@ -10,6 +10,26 @@ This project aims to develop a multilingual chatbot capable of answering user qu
 - Flask Web Interface: The chatbot is deployed using a Flask web application, allowing users to interact with it through a simple interface.
 - Training and Deployment: The models are trained on separate datasets for Arabic and English questions and answers. The trained models are saved and deployed for inference using TensorFlow and Keras.
 
+## Project Components
+The project comprises several components:
+- **Data Collection**: We gathered datasets containing questions and answers in Arabic and English languages from various sources.
+- **Language Detection**: We developed a language detection model to identify the language of the user input.
+- **Preprocessing**: Data preprocessing involves cleaning and tokenizing text data for further processing.
+- **Arabic Model**: The Arabic model consists of an encoder-decoder architecture implemented using LSTM (Long Short-Term Memory) networks.
+- **English Model**: Similarly, the English model is based on an encoder-decoder architecture using LSTM networks.
+- **Integration**: We integrated both models into a single system capable of handling queries in both languages.
+
+## Workflow
+1. **Data Preprocessing**: Cleaned and tokenized the text data, removed unnecessary characters, and normalized Arabic text.
+2. **Model Training**: Trained separate models for Arabic and English languages using LSTM networks.
+3. **Inference**: Developed inference models to generate responses based on user input.
+4. **Integration**: Integrated the language detection model and both language-specific models into a unified chatbot system.
+
+## Model Architecture
+- **Encoder-Decoder Architecture**: Both Arabic and English models follow an encoder-decoder architecture for sequence-to-sequence learning.
+- **LSTM Networks**: Long Short-Term Memory networks are used for capturing sequential dependencies in the input data.
+- **Tokenizer**: Tokenization is performed using the Tokenizer class from the Keras library.
+
 ## Dataset
 The chatbot models were trained on two separate datasets:
 
